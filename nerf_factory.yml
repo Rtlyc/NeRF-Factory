@@ -190,7 +190,7 @@ dependencies:
     - pillow-simd==9.0.0.post1
     - pip==22.1.2
     - piqa==1.2.2
-    - plenoxel
+    - plenoxel==0.0.1
     - prometheus-client==0.14.1
     - prometheus-flask-exporter==0.20.1
     - promise==2.3
