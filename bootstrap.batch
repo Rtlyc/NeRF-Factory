@@ -14,3 +14,24 @@ singularity exec --overlay /scratch/yl5680/overlay-15GB-500K.ext3:rw /scratch/wo
 
 ## bash scripts/download_vis_apartment.sh; 
 ## python visualizer.py configs/Apartment/apartment.yaml --output output/vis/Apartment
+
+## srun --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --time=12:00:00 --mem=10GB --gres=gpu:mi50:1 --pty /bin/bash
+
+## singularity exec --rocm --overlay /scratch/yl5680/overlay-25GB-500K.ext3:rw /scratch/work/public/singularity/rocm5.1.3-ubuntu20.04.4.sif /bin/bash
+
+
+## srun --nodes=1 --ntasks-per-node=1 --cpus-per-task=4 --time=12:00:00 --mem=10GB --gres=gpu:1 --pty /bin/bash
+
+## singularity exec --overlay /scratch/yl5680/overlay-25GB-500K.ext3:rw /scratch/work/public/singularity/cuda11.6.124-cudnn8.4.0.27-devel-ubuntu20.04.4.sif /bin/bash
+
+## singularity exec --overlay /scratch/yl5680/nerf_env/overlay-50G-10M.ext3:rw /scratch/work/public/singularity/cuda11.6.124-cudnn8.4.0.27-devel-ubuntu20.04.4.sif /bin/bash
+
+## source /ext3/miniconda3/bin/activate
+
+## conda activate nerf_factory
+
+
+## rocm-smi nvidia-smi
+## torch.cuda.is_available()
+
+## pytorch-1.12.1
